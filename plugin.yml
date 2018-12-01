@@ -1,0 +1,207 @@
+name: MultiSystemGo
+author: HyperLife
+main: multisystemgo\MultiSystemGo
+softdepend: 
+ - ZXDAKernel
+ - EconomyAPI
+version: 2.1.0
+api:
+ - 1.0.0
+ - 1.0.0-alpha1
+ - 1.0.0-ALPHA1
+ - 1.0.0-alpha2
+ - 1.0.0-ALPHA2
+ - 1.0.0-alpha3
+ - 1.0.0-ALPHA3
+ - 1.0.0-alpha4
+ - 1.0.0-ALPHA4
+ - 1.0.0-alpha5
+ - 1.0.0-ALPHA5
+ - 1.0.0-alpha6
+ - 1.0.0-ALPHA6
+ - 1.0.0-alpha7
+ - 1.0.0-ALPHA7
+ - 1.0.0-alpha8
+ - 1.0.0-ALPHA8
+ - 1.0.0-alpha9
+ - 1.0.0-ALPHA9
+ - 2.0.0
+ - 2.0.0-alpha1
+ - 2.0.0-ALPHA1
+ - 2.0.0-alpha2
+ - 2.0.0-ALPHA2
+ - 2.0.0-alpha3
+ - 2.0.0-ALPHA3
+ - 2.0.0-alpha4
+ - 2.0.0-ALPHA4
+ - 2.0.0-alpha5
+ - 2.0.0-ALPHA5
+ - 2.0.0-alpha6
+ - 2.0.0-ALPHA6
+ - 2.0.0-alpha7
+ - 2.0.0-ALPHA7
+ - 2.0.0-alpha8
+ - 2.0.0-ALPHA8
+ - 2.0.0-alpha9
+ - 2.0.0-ALPHA9
+ - 3.0.0
+ - 3.0.0-alpha1
+ - 3.0.0-ALPHA1
+ - 3.0.0-alpha2
+ - 3.0.0-ALPHA2
+ - 3.0.0-alpha3
+ - 3.0.0-ALPHA3
+ - 3.0.0-alpha4
+ - 3.0.0-ALPHA4
+ - 3.0.0-alpha5
+ - 3.0.0-ALPHA5
+ - 3.0.0-alpha6
+ - 3.0.0-ALPHA6
+ - 3.0.0-alpha7
+ - 3.0.0-ALPHA7
+ - 3.0.0-alpha8
+ - 3.0.0-ALPHA8
+ - 3.0.0-alpha9
+ - 3.0.0-ALPHA9
+ - 4.0.0
+ - 4.0.0-alpha1
+ - 4.0.0-ALPHA1
+ - 4.0.0-alpha2
+ - 4.0.0-ALPHA2
+ - 4.0.0-alpha3
+ - 4.0.0-ALPHA3
+ - 4.0.0-alpha4
+ - 4.0.0-ALPHA4
+ - 4.0.0-alpha5
+ - 4.0.0-ALPHA5
+ - 4.0.0-alpha6
+ - 4.0.0-ALPHA6
+ - 4.0.0-alpha7
+ - 4.0.0-ALPHA7
+ - 4.0.0-alpha8
+ - 4.0.0-ALPHA8
+ - 4.0.0-alpha9
+ - 4.0.0-ALPHA9
+ - 5.0.0
+ - 5.0.0-alpha1
+ - 5.0.0-ALPHA1
+ - 5.0.0-alpha2
+ - 5.0.0-ALPHA2
+ - 5.0.0-alpha3
+ - 5.0.0-ALPHA3
+ - 5.0.0-alpha4
+ - 5.0.0-ALPHA4
+ - 5.0.0-alpha5
+ - 5.0.0-ALPHA5
+ - 5.0.0-alpha6
+ - 5.0.0-ALPHA6
+ - 5.0.0-alpha7
+ - 5.0.0-ALPHA7
+ - 5.0.0-alpha8
+ - 5.0.0-ALPHA8
+ - 5.0.0-alpha9
+ - 5.0.0-ALPHA9
+ - 6.0.0
+ - 6.0.0-alpha1
+ - 6.0.0-ALPHA1
+ - 6.0.0-alpha2
+ - 6.0.0-ALPHA2
+ - 6.0.0-alpha3
+ - 6.0.0-ALPHA3
+ - 6.0.0-alpha4
+ - 6.0.0-ALPHA4
+ - 6.0.0-alpha5
+ - 6.0.0-ALPHA5
+ - 6.0.0-alpha6
+ - 6.0.0-ALPHA6
+ - 6.0.0-alpha7
+ - 6.0.0-ALPHA7
+ - 6.0.0-alpha8
+ - 6.0.0-ALPHA8
+ - 6.0.0-alpha9
+ - 6.0.0-ALPHA9
+ - 7.0.0
+ - 7.0.0-alpha1
+ - 7.0.0-ALPHA1
+ - 7.0.0-alpha2
+ - 7.0.0-ALPHA2
+ - 7.0.0-alpha3
+ - 7.0.0-ALPHA3
+ - 7.0.0-alpha4
+ - 7.0.0-ALPHA4
+ - 7.0.0-alpha5
+ - 7.0.0-ALPHA5
+ - 7.0.0-alpha6
+ - 7.0.0-ALPHA6
+ - 7.0.0-alpha7
+ - 7.0.0-ALPHA7
+ - 7.0.0-alpha8
+ - 7.0.0-ALPHA8
+ - 7.0.0-alpha9
+ - 7.0.0-ALPHA9
+ - 8.0.0
+ - 8.0.0-alpha1
+ - 8.0.0-ALPHA1
+ - 8.0.0-alpha2
+ - 8.0.0-ALPHA2
+ - 8.0.0-alpha3
+ - 8.0.0-ALPHA3
+ - 8.0.0-alpha4
+ - 8.0.0-ALPHA4
+ - 8.0.0-alpha5
+ - 8.0.0-ALPHA5
+ - 8.0.0-alpha6
+ - 8.0.0-ALPHA6
+ - 8.0.0-alpha7
+ - 8.0.0-ALPHA7
+ - 8.0.0-alpha8
+ - 8.0.0-ALPHA8
+ - 8.0.0-alpha9
+ - 8.0.0-ALPHA9
+ - 9.0.0
+ - 9.0.0-alpha1
+ - 9.0.0-ALPHA1
+ - 9.0.0-alpha2
+ - 9.0.0-ALPHA2
+ - 9.0.0-alpha3
+ - 9.0.0-ALPHA3
+ - 9.0.0-alpha4
+ - 9.0.0-ALPHA4
+ - 9.0.0-alpha5
+ - 9.0.0-ALPHA5
+ - 9.0.0-alpha6
+ - 9.0.0-ALPHA6
+ - 9.0.0-alpha7
+ - 9.0.0-ALPHA7
+ - 9.0.0-alpha8
+ - 9.0.0-ALPHA8
+ - 9.0.0-alpha9
+ - 9.0.0-ALPHA9
+load: POSTWORLD
+commands:
+ 特权:
+  description: "PrivilegePlayerGo! 特权玩家系统主命令"
+  permission: 特权.command
+ 智保:
+  description: "SmartProtectionGo! 智能保护系统主命令"
+  permission: 智保.command
+ 头衔:
+  description: "PrefixGo! 玩家头衔系统主命令"
+  permission: 头衔.command
+ 结婚:
+  description: "LuvGo! 玩家结婚系统主命令"
+  permission: 结婚.command
+ 战队:
+  description: "RangersGo! 玩家战队系统主命令"
+  permission: 战队.command
+permissions:
+ 特权.command: 
+  default: true
+ 智保.command: 
+  default: true
+ 头衔.command: 
+  default: true
+ 结婚.command: 
+  default: true
+ 战队.command: 
+  default: true
