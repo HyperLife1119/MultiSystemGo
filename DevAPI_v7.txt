@@ -1,0 +1,63 @@
+MultiSystemGo!-API 多系统-开发者接口
+注意: 
+ 1.该文本仅面向PocketMine开发者.
+ 2.该文本不属于售后服务范围内.
+ 3.接口调用失败/接口损坏请务必通知本插件作者.
+
+使用接口提示:
+ 1.使用MultiSystemGo!-API, 你必须
+ use MultiSystemGo\MultiSystemGo;(MultiSystemGo!_v1.9.3及以下版本)
+
+ use multisystemgo\MultiSystemGo; (MultiSystemGo!_v2.0.0及以上版本)
+
+接口参数须知:
+ 1.$player指向一名玩家
+ 2.$playerName指向玩家名称
+ 3.$levelName指向世界地图名称
+ 4.其余参数会在接口介绍/用法内介绍
+
+接口介绍/用法:
+ MultiSystemGo::getInstance()->addPrivilege($playerName,$level,$time)
+: 将名为$playerName的玩家添加为特权玩家($level参数: 0代表普通特权, 1代表高级特权, 2代表顶级特权. $time参数: 代表特权时间, 单位/天).
+
+ MultiSystemGo::getInstance()->removePrivilege($playerName)
+: 移除名为$playerName的玩家的特权玩家身份.
+
+ MultiSystemGo::getInstance()->getPrivilegeTime($player) 
+: (返回数据类型: Int)返回$player的特权剩余天数, 若$player不是特权玩家, 则返回0.
+
+ MultiSystemGo::getInstance()->getPlayerTitle($playerName) 
+: (返回数据类型: String)返回名为$playerName的玩家的称号.
+
+ MultiSystemGo::getInstance()->isPrivilege($player) 
+: (返回数据类型: Bool)判断$player是否为特权玩家, 若是特权玩家, 则返回TRUE, 若不是特权玩家, 则返回FALSE.
+
+ MultiSystemGo::getInstance()->getPlayerType($player) 
+: (返回数据类型: Int)返回$player的玩家类型, 若$player是普通玩家, 则返回0, 若$player是普通特权, 则返回1, 若$player是高级特权, 则返回2, 若$player是顶级特权, 则返回3.
+
+ MultiSystemGo::getInstance()->getWorldType($levelName) 
+: (返回数据类型: Int)返回地图名为$levelName的世界类型, 若地图名为$levelName的世界是普通世界, 则返回0, 若地图名为$levelName的世界是普通特权世界, 则返回1, 若地图名为$levelName的世界是高级特权世界, 则返回2, 若地图名为$levelName的世界是顶级特权世界, 则返回3.
+
+ MultiSystemGo::getInstance()->setMarry($playerName1,$playerName2)
+: 强制将名为$playerName1的玩家与名为$playerName2的玩家进行结婚.
+
+ MultiSystemGo::getInstance()->setDivorce($playerName)
+: 强制将名为$playerName的玩家与其配偶进行离婚.
+
+ MultiSystemGo::getInstance()->isMarry($player)
+: (返回数据类型: Bool)判断$player玩家是否已经结婚, 若已婚, 则返回TRUE, 若未婚, 则返回FALSE.
+
+ MultiSystemGo::getInstance()->getSpouse($player)
+: (返回数据类型: String)返回$player的配偶名称, 若$player没有配偶, 则返回"无".
+ 
+ MultiSystemGo::getInstance()->getPrefix($player)
+: (返回数据类型: String)返回$player的头衔, 若$player没有头衔, 则返回"无".
+
+ MultiSystemGo::getInstance()->isCaptain($player)
+: (返回数据类型: Bool)判断$player玩家是否为玩家战队队长, 若是队长, 则返回TRUE, 若不是队长, 则返回FALSE.
+
+ MultiSystemGo::getInstance()->getRangers($player)
+: (返回数据类型: String)返回$player所加入战队的战队名称, 若$player没有加入战队, 则返回"无".
+
+ MultiSystemGo::getInstance()->getRangersManagers($rangersName)
+: (返回数据类型: Array)返回$rangersName战队的管理员列表($rangersName指向战队名称).
